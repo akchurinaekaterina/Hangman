@@ -87,12 +87,12 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
     
     func loadWord() {
-        if let wordsFileURL = Bundle.main.url(forResource: "level1", withExtension: ".txt") {
+        if let wordsFileURL = Bundle.main.url(forResource: "words-en", withExtension: ".txt") {
             if let wordsString = try? String(contentsOf: wordsFileURL) {
                 var words = wordsString.components(separatedBy: "\n")
                 words.shuffle()
                 wordsArray = words
-                currentWord = wordsArray[numbOfGame]
+                currentWord = wordsArray[numbOfGame].uppercased()
                 encrypt(currentWord)
             }
         }
@@ -106,7 +106,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         } else {
             numbOfGame = 0
         }
-        currentWord = wordsArray[numbOfGame]
+        currentWord = wordsArray[numbOfGame].uppercased()
         steps = 7
         encrypt(currentWord)
         usedString = ""

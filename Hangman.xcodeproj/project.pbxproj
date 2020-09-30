@@ -13,7 +13,7 @@
 		BC8CB3542522270500AA4ED9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC8CB3522522270500AA4ED9 /* Main.storyboard */; };
 		BC8CB3562522271400AA4ED9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC8CB3552522271400AA4ED9 /* Assets.xcassets */; };
 		BC8CB3592522271400AA4ED9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC8CB3572522271400AA4ED9 /* LaunchScreen.storyboard */; };
-		BC8CB36225222B1F00AA4ED9 /* level1.txt in Resources */ = {isa = PBXBuildFile; fileRef = BC8CB36125222B1F00AA4ED9 /* level1.txt */; };
+		BC8CB36225222B1F00AA4ED9 /* words-en.txt in Resources */ = {isa = PBXBuildFile; fileRef = BC8CB36125222B1F00AA4ED9 /* words-en.txt */; };
 		BC8CB38025224C6C00AA4ED9 /* step5.png in Resources */ = {isa = PBXBuildFile; fileRef = BC8CB37825224C6B00AA4ED9 /* step5.png */; };
 		BC8CB38125224C6C00AA4ED9 /* step4.png in Resources */ = {isa = PBXBuildFile; fileRef = BC8CB37925224C6B00AA4ED9 /* step4.png */; };
 		BC8CB38225224C6C00AA4ED9 /* step6.png in Resources */ = {isa = PBXBuildFile; fileRef = BC8CB37A25224C6B00AA4ED9 /* step6.png */; };
@@ -33,7 +33,7 @@
 		BC8CB3552522271400AA4ED9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BC8CB3582522271400AA4ED9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BC8CB35A2522271400AA4ED9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BC8CB36125222B1F00AA4ED9 /* level1.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = level1.txt; sourceTree = "<group>"; };
+		BC8CB36125222B1F00AA4ED9 /* words-en.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "words-en.txt"; sourceTree = "<group>"; };
 		BC8CB37825224C6B00AA4ED9 /* step5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = step5.png; sourceTree = "<group>"; };
 		BC8CB37925224C6B00AA4ED9 /* step4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = step4.png; sourceTree = "<group>"; };
 		BC8CB37A25224C6B00AA4ED9 /* step6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = step6.png; sourceTree = "<group>"; };
@@ -55,6 +55,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BC0A7A7F2524FE60008A2F10 /* Words */ = {
+			isa = PBXGroup;
+			children = (
+				BC8CB36125222B1F00AA4ED9 /* words-en.txt */,
+			);
+			path = Words;
+			sourceTree = "<group>";
+		};
 		BC8CB3402522270300AA4ED9 = {
 			isa = PBXGroup;
 			children = (
@@ -74,13 +82,13 @@
 		BC8CB34B2522270400AA4ED9 /* Hangman */ = {
 			isa = PBXGroup;
 			children = (
+				BC0A7A7F2524FE60008A2F10 /* Words */,
 				BC8CB34C2522270400AA4ED9 /* AppDelegate.swift */,
 				BC8CB34E2522270400AA4ED9 /* SceneDelegate.swift */,
 				BC8CB3502522270400AA4ED9 /* ViewController.swift */,
 				BC8CB3522522270500AA4ED9 /* Main.storyboard */,
 				BC8CB3552522271400AA4ED9 /* Assets.xcassets */,
 				BC8CB37725224C6B00AA4ED9 /* images1 */,
-				BC8CB36125222B1F00AA4ED9 /* level1.txt */,
 				BC8CB3572522271400AA4ED9 /* LaunchScreen.storyboard */,
 				BC8CB35A2522271400AA4ED9 /* Info.plist */,
 			);
@@ -162,7 +170,7 @@
 				BC8CB38725224C6C00AA4ED9 /* step1.png in Resources */,
 				BC8CB38225224C6C00AA4ED9 /* step6.png in Resources */,
 				BC8CB3592522271400AA4ED9 /* LaunchScreen.storyboard in Resources */,
-				BC8CB36225222B1F00AA4ED9 /* level1.txt in Resources */,
+				BC8CB36225222B1F00AA4ED9 /* words-en.txt in Resources */,
 				BC8CB38425224C6C00AA4ED9 /* step3.png in Resources */,
 				BC8CB38625224C6C00AA4ED9 /* step0.png in Resources */,
 				BC8CB38025224C6C00AA4ED9 /* step5.png in Resources */,
@@ -331,6 +339,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = HFG94S52NY;
 				INFOPLIST_FILE = Hangman/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -350,6 +359,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = HFG94S52NY;
 				INFOPLIST_FILE = Hangman/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
