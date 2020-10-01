@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="poJ-f4-C02">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Rl2-Rr-vDh">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
@@ -11,7 +11,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Hangman" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Game" id="BYZ-38-t0r" customClass="ViewController" customModule="Hangman" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -77,7 +77,106 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="928.98550724637687" y="93.75"/>
+            <point key="canvasLocation" x="1839.1304347826087" y="93.75"/>
+        </scene>
+        <!--Start-->
+        <scene sceneID="kWa-cx-PEk">
+            <objects>
+                <viewController title="Start" id="VzY-dt-S1M" customClass="StartViewController" customModule="Hangman" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4Od-iX-Vm5">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DkT-FC-AWv">
+                                <rect key="frame" x="20" y="108" width="374" height="296"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HANGMAN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Frf-Nd-0iT">
+                                <rect key="frame" x="107.5" y="424" width="199" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KjL-fm-U8F">
+                                <rect key="frame" x="77" y="482" width="260.5" height="53"/>
+                                <string key="text">Guess the word 
+before your man gets hung!</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NE8-ig-kma">
+                                <rect key="frame" x="107.5" y="569" width="199" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="pG3-Dc-wVv"/>
+                                </constraints>
+                                <state key="normal" title="New Game">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="newGame:" destination="VzY-dt-S1M" eventType="touchUpInside" id="zuE-Ee-6BC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4eD-qI-fDH">
+                                <rect key="frame" x="107.5" y="623" width="199" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="G8p-e1-aoa"/>
+                                </constraints>
+                                <state key="normal" title="Continue">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="continueGame:" destination="VzY-dt-S1M" eventType="touchUpInside" id="Kn7-0H-eZH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Ly-YO-wn6">
+                                <rect key="frame" x="107.5" y="677" width="199" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="mPm-U3-Cad"/>
+                                </constraints>
+                                <state key="normal" title="Rules">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="rules:" destination="VzY-dt-S1M" eventType="touchUpInside" id="zIF-Bz-7jg"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="N4D-wI-UTW"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Frf-Nd-0iT" firstAttribute="top" secondItem="DkT-FC-AWv" secondAttribute="bottom" constant="20" id="2Tr-Cy-hbs"/>
+                            <constraint firstItem="NE8-ig-kma" firstAttribute="top" secondItem="KjL-fm-U8F" secondAttribute="bottom" constant="34" id="3yT-VT-ATq"/>
+                            <constraint firstItem="NE8-ig-kma" firstAttribute="width" secondItem="Frf-Nd-0iT" secondAttribute="width" id="5bk-xw-Wns"/>
+                            <constraint firstItem="DkT-FC-AWv" firstAttribute="top" secondItem="N4D-wI-UTW" secondAttribute="top" constant="20" id="9DF-nA-Z6V"/>
+                            <constraint firstItem="KjL-fm-U8F" firstAttribute="top" secondItem="Frf-Nd-0iT" secondAttribute="bottom" constant="10" id="D0y-eW-dvC"/>
+                            <constraint firstItem="6Ly-YO-wn6" firstAttribute="centerX" secondItem="4Od-iX-Vm5" secondAttribute="centerX" id="Er8-vf-0Uq"/>
+                            <constraint firstItem="4eD-qI-fDH" firstAttribute="height" secondItem="NE8-ig-kma" secondAttribute="height" id="G09-zN-GGy"/>
+                            <constraint firstItem="6Ly-YO-wn6" firstAttribute="width" secondItem="NE8-ig-kma" secondAttribute="width" id="MSx-Pt-oxu"/>
+                            <constraint firstItem="Frf-Nd-0iT" firstAttribute="centerX" secondItem="4Od-iX-Vm5" secondAttribute="centerX" id="TBh-Zz-Fq9"/>
+                            <constraint firstItem="4eD-qI-fDH" firstAttribute="centerX" secondItem="4Od-iX-Vm5" secondAttribute="centerX" id="Xe5-Kf-Dfh"/>
+                            <constraint firstItem="Frf-Nd-0iT" firstAttribute="centerY" secondItem="4Od-iX-Vm5" secondAttribute="centerY" id="Ztl-cG-oUf"/>
+                            <constraint firstItem="6Ly-YO-wn6" firstAttribute="height" secondItem="NE8-ig-kma" secondAttribute="height" id="a9D-q4-yGi"/>
+                            <constraint firstItem="DkT-FC-AWv" firstAttribute="leading" secondItem="N4D-wI-UTW" secondAttribute="leading" constant="20" id="cHu-ca-7Db"/>
+                            <constraint firstItem="6Ly-YO-wn6" firstAttribute="top" secondItem="4eD-qI-fDH" secondAttribute="bottom" constant="10" id="geF-eS-e0N"/>
+                            <constraint firstItem="KjL-fm-U8F" firstAttribute="centerX" secondItem="4Od-iX-Vm5" secondAttribute="centerX" id="kcK-Hx-uoT"/>
+                            <constraint firstItem="N4D-wI-UTW" firstAttribute="trailing" secondItem="DkT-FC-AWv" secondAttribute="trailing" constant="20" id="m1b-MY-EJ2"/>
+                            <constraint firstItem="4eD-qI-fDH" firstAttribute="width" secondItem="NE8-ig-kma" secondAttribute="width" id="nbI-5O-tfm"/>
+                            <constraint firstItem="4eD-qI-fDH" firstAttribute="top" secondItem="NE8-ig-kma" secondAttribute="bottom" constant="10" id="uKp-60-LyT"/>
+                            <constraint firstItem="DkT-FC-AWv" firstAttribute="centerX" secondItem="4Od-iX-Vm5" secondAttribute="centerX" id="x5v-Mf-65E"/>
+                            <constraint firstItem="NE8-ig-kma" firstAttribute="centerX" secondItem="4Od-iX-Vm5" secondAttribute="centerX" id="z6N-1d-f4e"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="XPJ-xd-00e"/>
+                    <connections>
+                        <outlet property="contButton" destination="4eD-qI-fDH" id="lVs-yb-FiE"/>
+                        <outlet property="mainImage" destination="DkT-FC-AWv" id="CNH-HM-AJF"/>
+                        <outlet property="newGameButton" destination="NE8-ig-kma" id="tLx-kQ-jkj"/>
+                        <outlet property="rulesButton" destination="6Ly-YO-wn6" id="g3x-B7-gXx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3l1-3t-kbL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-176.81159420289856" y="107.8125"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Nj4-CC-MLt">
@@ -95,10 +194,31 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yge-Cm-9YN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="18.840579710144929" y="93.75"/>
+            <point key="canvasLocation" x="928.98550724637687" y="93.75"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="o32-r1-0ZX">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Rl2-Rr-vDh" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="cio-2C-35G">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="VzY-dt-S1M" kind="relationship" relationship="rootViewController" id="oSn-2p-TYc"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QCm-kL-VhZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1086.9565217391305" y="107.8125"/>
         </scene>
     </scenes>
     <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
