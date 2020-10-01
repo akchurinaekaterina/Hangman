@@ -196,6 +196,38 @@ before your man gets hung!</string>
             </objects>
             <point key="canvasLocation" x="928.98550724637687" y="93.75"/>
         </scene>
+        <!--Rules View Controller-->
+        <scene sceneID="13k-0a-5pW">
+            <objects>
+                <viewController storyboardIdentifier="Rules" id="mgL-eV-AE0" customClass="RulesViewController" customModule="Hangman" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nx9-so-sXa">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3T2-6X-6cY">
+                                <rect key="frame" x="20" y="64" width="374" height="748"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="8Xg-zB-ew0"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="3T2-6X-6cY" firstAttribute="top" secondItem="8Xg-zB-ew0" secondAttribute="top" constant="20" id="5hW-pv-nDy"/>
+                            <constraint firstItem="3T2-6X-6cY" firstAttribute="leading" secondItem="8Xg-zB-ew0" secondAttribute="leading" constant="20" id="Rbx-U9-dMu"/>
+                            <constraint firstItem="8Xg-zB-ew0" firstAttribute="trailing" secondItem="3T2-6X-6cY" secondAttribute="trailing" constant="20" id="tdU-IV-1fJ"/>
+                            <constraint firstItem="8Xg-zB-ew0" firstAttribute="bottom" secondItem="3T2-6X-6cY" secondAttribute="bottom" constant="50" id="ubH-Jb-ZE5"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="rulesText" destination="3T2-6X-6cY" id="9Ie-tL-zs6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sWM-An-pSj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-142" y="823"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="o32-r1-0ZX">
             <objects>

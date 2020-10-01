@@ -21,7 +21,8 @@ class StartViewController: UIViewController {
     }
     
     @IBAction func rules (_ sender: UIButton) {
-        
+        guard let rulesVC = storyboard?.instantiateViewController(identifier: "Rules") as? RulesViewController else {return}
+        navigationController?.pushViewController(rulesVC, animated: true)
     }
     
     @IBOutlet weak var newGameButton: UIButton!

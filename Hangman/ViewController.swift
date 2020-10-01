@@ -82,7 +82,6 @@ class ViewController: UIViewController, UITextFieldDelegate {
         title = "Hangman Game"
         
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .refresh, target: self, action: #selector(reloadWord))
-        navigationItem.backBarButtonItem = UIBarButtonItem()
         imageView.image = UIImage(named: "step0.png")
         loadWord()
     }
